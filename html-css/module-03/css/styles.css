@@ -96,6 +96,10 @@ img {
     width: 100%;
 }
 
+.image {
+    margin-bottom: 18px;
+}
+
 .row {
     margin-right: 60px;
 }
@@ -106,6 +110,7 @@ img {
     color: #b4ad9e;
     font-size: 14px;
     margin: 0px;
+    margin-bottom: 30px;
 }
 
 .title {
@@ -138,4 +143,8 @@ img {
     font-size: 20px;
     line-height: 24px;
     cursor: pointer;   
+}
+
+.load-more:hover {
+
 }
