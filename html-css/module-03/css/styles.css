@@ -6,6 +6,13 @@ html{
 *::after{
     box-sizing: inherit;
 } */
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+ }
+ 
 .common {
     font-family: 'Playfair Display', serif;
     color: #626262; 
@@ -14,10 +21,19 @@ html{
     background-color: #ffffff; */
 }
 
-.main-content {
+.conteiner {
+    margin: 0 auto;
+    width: 960px;
+}
+/*.main-content {
     margin: 0 auto;
     padding: 88px 0;
     width: 960px;
+}*/
+
+.main-memu {
+    margin: 0 auto;
+    padding: 88px 0;
 }
 
 .navigation {
@@ -26,14 +42,24 @@ html{
 }
 
 .navigation-menu {
-    margin: 0 auto 0;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.page-section {
+ font-size: 0;
+ padding: 30px;
+ 
 }
 
 .menu-item {
     display: inline-block;
-    line-height: 24px;
-    font-size: 14px;
-    padding-right: 80px;
+    margin-right: 80px;
+    /*text-decoration: none;
+    text-transform: uppercase;*/
+    /*line-height: 24px;
+    font-size: 14px; */
 }
 
 .menu-item:last-child {
@@ -48,6 +74,8 @@ html{
 .item-link {
     color: #626262;
     cursor: pointer;
+    font-size: 14px;
+    line-height: 18px;
 }
 
 .item-link:hover {
@@ -60,6 +88,7 @@ html{
     margin-bottom: 135px;
     font-family: 'Playfair Display';
     color: #626262;
+    width: 420px;
 }
 
 .article img {
@@ -75,27 +104,29 @@ html{
     text-transform: uppercase;
     color: #b4ad9e;
     font-size: 14px;
-    margin-top: 32px;
 }
 
 .title {
     font-size: 30px;
-    margin-top: 32px;
-    margin-bottom: 41px; 
+    margin: 0px;
+    margin-bottom: 40px; 
 }
 
 .description {
     line-height: 24px;
     font-size: 14px;
+    margin: 0;
 }
 
-.button {
+/*.button {
     margin: 0 auto;
     text-align: center;
     padding: 0;
-}
+}*/
 
 .load-more {
+    display: block;
+    margin: 0 auto;
     width: 162px;
     height: 60px;
     text-align: center;
