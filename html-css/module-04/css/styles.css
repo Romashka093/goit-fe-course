@@ -15,7 +15,7 @@ img {
 
 /* body */
 
-.common {
+.container {
   width: 1110px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -31,6 +31,7 @@ img {
 }
 
 .logo-link {
+  display: block;
   float: left;
 }
 
@@ -48,15 +49,15 @@ img {
 }
 
 .menu-content {
+  float: right;
+}
+
+.menu {
   padding: 10px 0;
   font-size: 14px;
   line-height: 11px;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  float: right;
-}
-
-.menu {
   margin: 0 auto;
   list-style-type: none;
   margin-right: -25px;
@@ -64,11 +65,12 @@ img {
 
 .menu-title {
   padding-right: 25px;
-  display: inline-block;
   vertical-align: middle;
+  float: left;
 }
 
 .menu-link {
+  display: block;
   color: #0f0101;
   cursor: pointer;
 }
@@ -135,7 +137,8 @@ img {
 }
 
 .item-conteiner {
-  padding: 77px 0 0 0;
+  padding: 0;
+  margin-top: 92px;
   bottom: 0;
 }
 
@@ -151,6 +154,10 @@ img {
 
 .product:nth-child(4n) {
   margin: 0;
+}
+
+.product:nth-child(n+4) {
+  margin-bottom: 0;
 }
 
 .clearfix::after {
@@ -206,21 +213,20 @@ img {
   background: #1abc9c71;
 }
 
-.img-link {
+.item-link {
+  display: block;
   cursor: pointer;
 }
 
 /* blog */
 
 .news {
-  padding: 71px 0 81px 0;
+  padding-top: 105px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .blog-conteiner {
-  padding: 90px 0 45px 0;
-  width: 1110px;
-  font-family: "Open Sans", sans-serif;
-  margin: 0 auto;
+  margin-top: 80px;
 }
 
 .blog {
@@ -228,7 +234,7 @@ img {
   background: #ffffff;
   float: left;
   width: 350px;
-  margin: 0 30px 15px 0;
+  margin-right: 30px;
 }
 
 .clearfix::after {
@@ -241,11 +247,16 @@ img {
   margin-right: -30px;
 }
 
+.blog-img {
+  margin-bottom: 15px;
+}
+
 .blog-name {
   font-size: 18px;
   line-height: 26px;
   color: #555252;
-  margin-bottom: 11px;
+  margin: 0;
+  margin-bottom: 29px;
   font-weight: 600;
   letter-spacing: -0.02em;
 }
@@ -269,20 +280,30 @@ img {
   font-size: 14px;
   line-height: 1.857;
   color: #555252;
-  margin-bottom: 11px;
+  margin: 0;
+  margin-bottom: 15px;
   font-weight: 400;
   letter-spacing: -0.02em;
 }
 
 .button-blog {
-  font-size: 16px;
-  line-height: 1.625;
-  color: #ffffff;
   background: #4ec6ab;
   padding: 12px 40px 13px 40px;
+  border-radius: 3px;
+}
+
+.button-link {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.625;
   font-weight: 300;
   cursor: pointer;
-  border-radius: 3px;
+}
+
+.button-link:focus {
+  font-weight: 600;
 }
 
 .button-blog:hover {
