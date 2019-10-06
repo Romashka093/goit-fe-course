@@ -107,6 +107,7 @@ img {
   background-color: #1abc9c;
   margin: 0 auto;
   bottom: 32px;
+  margin-top: 32px;
 }
 
 .clearfix::after {
@@ -255,6 +256,7 @@ img {
   width: 136px;
   height: 3px;
   background-color: #1abc9c;
+  margin-top: 11px;
 }
 
 .clearfix::after {
