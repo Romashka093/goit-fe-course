@@ -92,85 +92,86 @@ ol {
 }
 
 .slider {
-background-image: linear-gradient(rgba(0, 0, 0, .52), rgba(0, 0, 0, .52)), url(../img/slide.jpg);
-/* background-color: #000002; */
-background-size: cover;
-background-position: center;
-margin: 0 auto;
-font-family: "Roboto", sans-serif;
-color: #ffffff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.52)),
+    url(../img/slide.jpg);
+  /* background-color: #000002; */
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
 }
 
 .slide-name {
-font-family: "Roboto", sans-serif;
-font-weight: 900;
-font-size: 60px;
-line-height: 82px;
-letter-spacing: -.6px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 82px;
+  letter-spacing: -0.6px;
 }
 
 .slide-name span:hover {
-color: #ff7200;
-cursor: pointer;
+  color: #ff7200;
+  cursor: pointer;
 }
 
 .other-slides {
-font-weight: 300px;
-font-size: 24px;
-line-height: 54px;
+  font-weight: 300px;
+  font-size: 24px;
+  line-height: 54px;
 }
 
 .button {
-display: inline-block;
-background-color: #4ec6ab;
-opacity: 0.651;
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-width: 104px;
-height: 104px;
-border: none;
-opacity: 0.65;
-background-position: center;
+  display: inline-block;
+  background-color: #4ec6ab;
+  opacity: 0.651;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 104px;
+  height: 104px;
+  border: none;
+  opacity: 0.65;
+  background-position: center;
 }
 
 .button:hover {
-background-color: #4ec6ab;
-opacity: 1;
+  background-color: #4ec6ab;
+  opacity: 1;
 }
 
 .button:focus {
-cursor: pointer;
-opacity: 1;
+  cursor: pointer;
+  opacity: 1;
 }
 
 .btn-left {
-left: 0;
-background-image: url(../img/icon_left.png);
-background-repeat: no-repeat;
-object-fit: cover;
-margin: 0;
-position: absolute;
+  left: 0;
+  background-image: url(../img/icon_left.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: 0;
+  position: absolute;
 }
 
 .btn-right {
-right: 0;
-background-image: url(../img/icon_right.png);
-background-repeat: no-repeat;
-object-fit: cover;
-margin: 0;
-position: absolute;
+  right: 0;
+  background-image: url(../img/icon_right.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  margin: 0;
+  position: absolute;
 }
 
 .slides {
-margin: 0;
-padding: 0;
-list-style: none;
-position: absolute;
-left: 50%;
-top: 36%;
-transform: translateX(-50%);
-width: 822px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  top: 36%;
+  transform: translateX(-50%);
+  width: 822px;
 }
 
 /* SECTION */
@@ -226,10 +227,15 @@ width: 822px;
 .product {
   position: relative;
   width: 255px;
-  height: 100%;
-  display: inline-block;
+  float: left;
   margin-right: 26px;
   padding: 0;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
 }
 
 .product:last-child {
@@ -239,7 +245,6 @@ width: 822px;
 /* item footer */
 
 .item-footer {
-  position: absolute;
   background: #323232;
   width: 100%;
   height: 40px;
@@ -249,6 +254,12 @@ width: 822px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
 }
 
 .item-name {
@@ -393,23 +404,24 @@ width: 822px;
   border: none;
 }
 
-  /* FOOTER */
-  .footer {
-    height: 88px;
-    background: #323232;
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 88px;
-    color: #fefefe;
-  }
-  .footer span {
-    text-decoration: none;
-    color: #46bfa9;
-  }
-  
-  .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+/* FOOTER */
+
+.footer {
+  height: 88px;
+  background: #323232;
+  text-align: center;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 88px;
+  color: #fefefe;
+}
+.footer span {
+  text-decoration: none;
+  color: #46bfa9;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
