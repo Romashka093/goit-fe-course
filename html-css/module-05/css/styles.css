@@ -125,7 +125,7 @@ ol {
   display: inline-block;
   background-color: #4ec6ab;
   opacity: 0.651;
-  position: absolute;
+  /* position: absolute; */
   top: 50%;
   transform: translateY(-50%);
   width: 104px;
@@ -213,7 +213,7 @@ ol {
 
 .products {
   padding: 0;
-  padding-top: 119px;
+  padding-top: 80px;
   padding-bottom: 100px;
   background-color: #e9f0fd;
 }
@@ -225,11 +225,13 @@ ol {
 }
 
 .product {
-  position: relative;
   width: 255px;
   float: left;
   margin-right: 26px;
   padding: 0;
+}
+.product-item {
+  position: relative;
 }
 
 .clearfix::after {
