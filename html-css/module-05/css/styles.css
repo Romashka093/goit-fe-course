@@ -53,7 +53,7 @@ ol {
 .navigation__list {
   display: inline-block;
   vertical-align: middle;
-  width: calc(100% - 91px);
+  width: calc(100% - 76px);
   text-align: right;
 }
 
@@ -225,7 +225,7 @@ ol {
 .product {
   width: 255px;
   float: left;
-  margin-right: 26px;
+  margin-right: 30px;
   padding: 0;
 }
 .product-item {
