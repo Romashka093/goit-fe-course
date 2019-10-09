@@ -41,17 +41,17 @@ ol {
 }
 
 .navigation {
-  font-size: 0;
+  height: 20px;
   margin-bottom: 32px;
 }
 
 .logo__link {
-  display: inline-block;
+  float: left;
   vertical-align: middle;
 }
 
 .navigation__list {
-  display: inline-block;
+  float: right;
   vertical-align: middle;
   width: calc(100% - 76px);
   text-align: right;
