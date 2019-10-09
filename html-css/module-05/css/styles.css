@@ -74,13 +74,12 @@ ol {
   color: #0f0101;
 }
 
-.navigation__link:hover {
+.navigation__link:hover,
+.navigation__link:focus{
   color: #1abc9c;
+  transition: all .3s linear;
 }
 
-.navigation__link:focus {
-  color: #1abc9c;
-}
 
 /* SLIDE */
 
@@ -108,15 +107,17 @@ ol {
   font-size: 60px;
   line-height: 82px;
   letter-spacing: -0.6px;
+  margin: 0;
 }
 
 .slide-name span:hover {
   color: #ff7200;
   cursor: pointer;
+  transition: all .5s linear;
 }
 
 .other-slides {
-  font-weight: 300px;
+  font-weight: 300;
   font-size: 24px;
   line-height: 54px;
 }
@@ -135,14 +136,11 @@ ol {
   background-position: center;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
   background-color: #4ec6ab;
   opacity: 1;
-}
-
-.btn:focus {
-  cursor: pointer;
-  opacity: 1;
+  transition: all .5s linear;
 }
 
 .btn-left {
@@ -169,7 +167,7 @@ ol {
   list-style: none;
   position: absolute;
   left: 50%;
-  top: 36%;
+  top: 35%;
   transform: translateX(-50%);
   width: 822px;
 }
@@ -285,10 +283,12 @@ ol {
 
 .product:hover .item-footer {
   background: #1abc9c;
+  transition: all .3s linear;
 }
 
 .product:hover .product-overlay {
   opacity: 1;
+  transition: all .3s linear;
 }
 
 .clearfix::before {
@@ -299,6 +299,7 @@ ol {
 
 .product:hover .product-img {
   opacity: 0.549;
+  transition: all .5s linear;
 }
 
 /* SUBMENU */
@@ -400,11 +401,13 @@ ol {
 
 .button:hover {
   opacity: 1;
+  transition: all .2s linear;
 }
 
 .button:focus {
   background-color: #1abc9c;
   border: none;
+  transition: all .2s linear;
 }
 
 /* FOOTER */
