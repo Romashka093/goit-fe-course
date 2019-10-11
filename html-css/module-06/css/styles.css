@@ -37,6 +37,27 @@ ol {
   padding: 28px 0;
 }
 
+.logo__link {
+  animation: logo 3s linear;
+}
+
+@keyframes logo {
+  0% {
+    transform: translateY(-28px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
