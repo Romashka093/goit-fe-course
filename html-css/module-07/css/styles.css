@@ -2,28 +2,38 @@
 
 @font-face {
   font-family: "Montserrat", sans-serif;
-  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff) format('woff');
-  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff2) format('woff2');
-  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff) format('woff');
-  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff2) format('woff2');
+  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff)
+    format("woff");
+  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff2)
+    format("woff2");
+  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff)
+    format("woff");
+  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff2)
+    format("woff2");
 }
 
 @font-face {
   font-family: "RobotoSlab", sans-serif;
-  src: url(../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff) format('woff');
-  src: url(../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff2) format('woff2');
+  src: url(../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff)
+    format("woff");
+  src: url(../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff2)
+    format("woff2");
 }
 
 @font-face {
   font-family: "Wisdom Script AJ";
-  src: url(../fonts/pinyon-script-v9-latin/pinyon-script-v9-latin-regular.woff) format('woff');
-  src: url(../fonts/pinyon-script-v9-latin/pinyon-script-v9-latin-regular.woff2) format('woff2');
+  src: url(../fonts/pinyon-script-v9-latin/pinyon-script-v9-latin-regular.woff)
+    format("woff");
+  src: url(../fonts/pinyon-script-v9-latin/pinyon-script-v9-latin-regular.woff2)
+    format("woff2");
 }
 
 @font-face {
   font-family: "Droid Serif";
-  src: url(../fonts/alegreya-v13-latin/alegreya-v13-latin-italic.woff) format('woff');
-  src: url(../fonts/alegreya-v13-latin/alegreya-v13-latin-italic.woff2) format('woff2');
+  src: url(../fonts/alegreya-v13-latin/alegreya-v13-latin-italic.woff)
+    format("woff");
+  src: url(../fonts/alegreya-v13-latin/alegreya-v13-latin-italic.woff2)
+    format("woff2");
 }
 
 * {
@@ -229,6 +239,7 @@ ol {
   background-color: #222222;
   background-repeat: no-repeat;
   background-position: right bottom;
+  max-width: 100%;
 }
 
 .contact_wrap {
@@ -273,8 +284,12 @@ ol {
   padding: 20px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 28px;
   letter-spacing: -0.35px;
+}
+
+.user_input,
+.communication_window {
+  padding-bottom: 28px;
 }
 
 .communication_window {
