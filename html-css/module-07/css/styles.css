@@ -1,18 +1,29 @@
 /* main */
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800");
-@import url("https://fonts.googleapis.com/css?family=Quicksand");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap");
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff);
+  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff2);
+  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff);
+  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff2);
+}
+
+@font-face {
+  font-family: "RobotoSlab", sans-serif;
+  src: url(../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff);
+  src: url(../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff2);
+}
+
 @font-face {
   font-family: "Wisdom Script AJ";
-  src: url(../fonts/Wisdom_Script_AI.woff);
-  src: url(../fonts/Wisdom_Script_AI.woff2);
+  src: url(../fonts/pinyon-script-v9-latin/pinyon-script-v9-latin-regular.woff);
+  src: url(../fonts/pinyon-script-v9-latin/pinyon-script-v9-latin-regular.woff2);
 }
 
 @font-face {
   font-family: "Droid Serif";
-  src: url(../fonts/Droid_Serif_Italic.woff);
-  src: url(../fonts/Droid_Serif_Italic.woff2);
+  src: url(../fonts/alegreya-v13-latin/alegreya-v13-latin-italic.woff);
+  src: url(../fonts/alegreya-v13-latin/alegreya-v13-latin-italic.woff2);
 }
 
 * {
@@ -55,7 +66,7 @@ ol {
 .logo__link {
   font-family: "Wisdom Script AJ";
   text-transform: none;
-  font-size: 26px;
+  font-size: 40px;
   line-height: 41px;
   color: #fed136;
   animation: left 1s linear;
@@ -140,9 +151,7 @@ ol {
   text-transform: none;
   display: block;
   font-family: "Droid Serif";
-  font-weight: 300;
-  font-style: italic;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.2;
   color: #777777;
 }
@@ -275,13 +284,13 @@ ol {
 .name_input,
 .mail_input:invalid,
 .message_input:invalid {
-  outline-color: #ff0000;
+  outline-color: #c31432;
 }
 
 .name_input:valid,
 .mail_input:valid,
 .message_input:valid {
-  outline-color: #00ff00;
+  outline-color: #34e89e;
 }
 
 .submit_button {
