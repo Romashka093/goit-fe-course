@@ -2,7 +2,6 @@
 
 @font-face {
   font-family: "Montserrat", sans-serif;
-  font-style: normal;
   font-weight: 400;
   src: local("Montserrat Regular"), local("Montserrat-Regular"),
     url("../font/montserrat-v14-cyrillic_latin-regular.woff2") format("woff2"),
@@ -11,7 +10,6 @@
 
 @font-face {
   font-family: "Montserrat", sans-serif;
-  font-style: bold;
   font-weight: 700;
   src: local("Montserrat Bold"), local("Montserrat-Bold"),
     url("../font/montserrat-v14-cyrillic_latin-700.woff2") format("woff2"),

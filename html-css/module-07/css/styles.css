@@ -1,39 +1,70 @@
 /* main */
 
+/* @font-face {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/montserrat-v14-latin-regular.woff) format("woff"),
+  url(../fonts/montserrat-v14-latin-regular.woff2) format("woff2");
+    
+}
+
 @font-face {
   font-family: "Montserrat", sans-serif;
-  src: url(../fonts/Montserrat_latin_400.woff)
-    format("woff");
-  src: url(../fonts/Montserrat_latin_400.woff2)
-    format("woff2");
-  src: url(../fonts/Montserrat_latin_700.woff)
-    format("woff");
-  src: url(../fonts/Montserrat_latin_700.woff2)
-    format("woff2");
+  font-style: bold;
+  font-weight: 700;
+  src: url(../fonts/montserrat-v14-latin-700.woff) format("woff");
+  src: url(../fonts/montserrat-v14-latin-700.woff2) format("woff2");
+} */
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff2') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff2') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* @font-face {
+  font-family: "RobotoSlab", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/Roboto_Slab_latin_400.woff) format("woff"),
+    url(../fonts/Roboto_Slab_latin_400.woff2) format("woff2");
+} */
+/* roboto-slab-regular - latin */
 
 @font-face {
-  font-family: "RobotoSlab", sans-serif;
-  src: url(../fonts/Roboto_Slab_latin_400.woff)
-    format("woff");
-  src: url(../fonts/Roboto_Slab_latin_400.woff2)
-    format("woff2");
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+       url('../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff2') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-
 @font-face {
   font-family: "Wisdom Script AJ"; /* = Pinyon Script */
-  src: url(../fonts/Pinyon_Scrip_latin_regular.woff)
-    format("woff");
-  src: url(../fonts/Pinyon_Scrip_latin_regular..woff2)
-    format("woff2");
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/Pinyon_Scrip_latin_regular.woff) format("woff"),
+    url(../fonts/Pinyon_Scrip_latin_regular..woff2) format("woff2");
 }
 
 @font-face {
-   font-family: "Droid Serif"; /* = Alegreya */
-  src: url(../fonts/Alegreya_latin_italic.woff)
-    format("woff");
-  src: url(../fonts/Alegreya_latin_italic.woff2)
-    format("woff2");
+  font-family: "Droid Serif"; /* = Alegreya */
+  src: url(../fonts/Alegreya_latin_italic.woff) format("woff"),
+    url(../fonts/Alegreya_latin_italic.woff2) format("woff2");
 }
 
 * {
@@ -101,6 +132,12 @@ ol {
   text-transform: uppercase;
 }
 
+.mane__name {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
 .menu__list {
   display: flex;
   min-width: 480px;
@@ -122,9 +159,10 @@ ol {
 
 .menu__link {
   font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 41px;
-  font-weight: 400;
   color: #222222;
   transition: all 200ms linear;
 }
@@ -149,9 +187,10 @@ ol {
 .section_heading {
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 40px;
   line-height: 75px;
-  font-weight: 900;
   padding-top: 90px;
   text-transform: uppercase;
 }
@@ -198,7 +237,8 @@ ol {
 }
 
 .about_service {
-  font-family: "RobotoSlab", sans-serif;
+  font-family: 'Roboto Slab';
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   color: #777777;
@@ -248,6 +288,7 @@ ol {
   justify-content: space-between;
   flex-wrap: wrap;
   font-family: "Montserrat", sans-serif;
+  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   padding-top: 70px;
