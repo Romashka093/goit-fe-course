@@ -2,37 +2,37 @@
 
 @font-face {
   font-family: "Montserrat", sans-serif;
-  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff)
+  src: url(../fonts/Montserrat_latin_400.woff)
     format("woff");
-  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff2)
+  src: url(../fonts/Montserrat_latin_400.woff2)
     format("woff2");
-  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff)
+  src: url(../fonts/Montserrat_latin_700.woff)
     format("woff");
-  src: url(../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff2)
+  src: url(../fonts/Montserrat_latin_700.woff2)
     format("woff2");
 }
 
 @font-face {
   font-family: "RobotoSlab", sans-serif;
-  src: url(../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff)
+  src: url(../fonts/Roboto_Slab_latin_400.woff)
     format("woff");
-  src: url(../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff2)
+  src: url(../fonts/Roboto_Slab_latin_400.woff2)
     format("woff2");
 }
 
 @font-face {
-  font-family: "Wisdom Script AJ";
-  src: url(../fonts/pinyon-script-v9-latin/pinyon-script-v9-latin-regular.woff)
+  font-family: "Wisdom Script AJ"; /* = Pinyon Script */
+  src: url(../fonts/Pinyon_Scrip_latin_regular.woff)
     format("woff");
-  src: url(../fonts/pinyon-script-v9-latin/pinyon-script-v9-latin-regular.woff2)
+  src: url(../fonts/Pinyon_Scrip_latin_regular..woff2)
     format("woff2");
 }
 
 @font-face {
-  font-family: "Droid Serif";
-  src: url(../fonts/alegreya-v13-latin/alegreya-v13-latin-italic.woff)
+   font-family: "Droid Serif"; /* = Alegreya */
+  src: url(../fonts/Alegreya_latin_italic.woff)
     format("woff");
-  src: url(../fonts/alegreya-v13-latin/alegreya-v13-latin-italic.woff2)
+  src: url(../fonts/Alegreya_latin_italic.woff2)
     format("woff2");
 }
 
