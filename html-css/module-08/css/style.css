@@ -172,6 +172,7 @@ ol {
 .partners {
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  margin-bottom: 57px;
 }
 
 .section_title {
@@ -274,7 +275,7 @@ ol {
 
 /* tablet */
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .container {
     width: 768px;
     padding: 0 10px;
@@ -327,6 +328,10 @@ ol {
     margin-bottom: 32px;
   }
 
+  .partners {
+    margin-bottom: 40px;
+  }
+
   .partners_list {
     display: flex;
     justify-content: space-between;
@@ -376,6 +381,11 @@ ol {
     margin-top: 71px;
     margin-bottom: 33px;
   }
+
+  .partners {
+    margin-bottom: 70px;
+  }
+  
   .partners_list {
     flex-wrap: nowrap;
     margin-bottom: 40px;
