@@ -55,10 +55,6 @@ ol {
   list-style: none;
 }
 
-/* .container {
-  max-width: 320px;
-  margin: 0 auto;
-} */
 
 /* HEADER */
 
@@ -165,14 +161,6 @@ ol {
   margin-bottom: 18px;
 }
 
-/* .partners_list {
-
-}
-
-.partner_profile {
-
-} */
-
 .partner_img {
   position: relative;
   margin: 0 auto;
@@ -259,7 +247,7 @@ ol {
 
 @media (min-width: 768px) {
   .container {
-    max-width: 748px;
+    max-width: 720px;
   }
 
   .header {
@@ -320,9 +308,9 @@ ol {
 }
 
 
-@media (min-width: 940px) {
+@media (min-width: 992px) {
   .container {
-    max-width: 940px;
+    max-width: 960px;
   }
 
   .header {
