@@ -1,0 +1,358 @@
+/* main */
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff2') format('woff2'), 
+       url('../fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff2') format('woff2'),
+       url('../fonts/montserrat-v14-latin/montserrat-v14-latin-700.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'),
+       url('../fonts/roboto-v20-latin/roboto-v20-latin-300.woff2') format('woff2'), 
+       url('../fonts/roboto-v20-latin/roboto-v20-latin-300.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* .container {
+  max-width: 320px;
+  margin: 0 auto;
+} */
+
+/* HEADER */
+
+.header {
+  background-image: url(../img/BG_mobile.png);
+  background-color: #1a1915;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 540px;
+  padding-top: 15px;
+  margin-bottom: 64px;
+}
+
+.navigation {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff; 
+  text-align: center;
+}
+
+.go_in {
+  border: solid 2px rgba(255, 255, 255, 0);
+  background-color: rgba(26, 25, 21, -0.1);
+  color: #ffffff;
+  padding: 11px 16px;
+  margin-bottom: 115px;
+}
+
+.go_in:hover,
+.go_in:focus {
+  border: solid 2px #ffffff;
+  border-radius: 20px;
+  background-color: rgba(26, 25, 21, 0);
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+  
+}
+
+.logo_link {
+ display: block;
+ margin: 0 auto;
+}
+
+.heading_wrapper {
+  text-align: center;
+  color: #ffffff;
+}
+
+.section_heading {
+  font-size: 30px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: -0.04px;
+  margin-bottom: 16px;
+}
+
+.section_description {
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  letter-spacing: -0.3px;
+  margin-bottom: 18px;
+}
+
+.btn_top {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  background-color: #ff4e50;
+  width: 280px;
+  height: 40px;
+  padding: 12px 40px;
+}
+
+.main_content {
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.section_title {
+  font-size: 22px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 18px;
+}
+
+/* .partners_list {
+
+}
+
+.partner_profile {
+
+} */
+
+.partner_img {
+  position: relative;
+  margin: 0 auto;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.partner_img::before {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: 0;
+  right: 0;
+}
+
+.profile_img {
+  border-radius: 50%;;
+}
+
+.partner_profile:nth-child(1) .partner_img::before {
+  background-image: url(../img/TV.png);
+  background-color: #ff4e50;
+}
+
+.partner_profile:nth-child(2) .partner_img::before {
+  background-image: url(../img/flask.png);
+  background-color: #ffa507;
+}
+
+.partner_profile:nth-child(3) .partner_img::before {
+  background-image: url(../img/cup.png);
+  background-color: #1cd7ad;
+}
+
+.partner_profile:nth-child(4) .partner_img::before {
+  background-image: url(../img/telegram.png);
+  background-color: #4e73db;
+}
+
+.partner_name {
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.partner_description {
+  font-size: 14px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  color: #666666;
+  margin-bottom: 28px;
+}
+
+.btn_box {
+  margin-bottom: 56px;
+  align-items: center;
+}
+
+.btn_bottom {
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  background-color: #ffffff;
+  color: #ff4e50;
+  border-radius: 20px;
+  border: 2px solid #ff4e50;
+  width: 280px;
+  height: 40px;
+  padding: 12px 40px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 748px;
+  }
+
+  .header {
+    background-image: url(../img/BG_tablet.png);
+    height: 700px;
+
+  }
+
+  .go_in {
+    margin: 0;
+  }
+
+  .navigation {
+    flex-direction: row-reverse;
+    margin-bottom: 150px;
+  }
+
+  .logo_container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .section_heading {
+    font-size: 52px;
+    margin-bottom: 32px;
+  }
+
+  .section_description {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+
+  .btn_top {
+    width: 226px;
+    padding: 12px;
+  }
+
+  .partners_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .btn_box {
+    margin-bottom: 40px;
+  }
+  
+}
+
+
+@media (min-width: 940px) {
+  .container {
+    max-width: 940px;
+  }
+
+  .header {
+    background-image: url(../img/Artboard.png);
+  }
+
+  .navigation {
+    margin-bottom: 100px;
+  }
+
+  .btn_box {
+    display: block;
+    text-align: right;
+  }
+
+  .logo_container {
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .logo_link {
+    margin: 0;
+  }
+
+  .section_title {
+    margin-bottom: 32px;
+  }
+
+  .btn_box {
+    margin-bottom: 70px;
+  }
+
+}
