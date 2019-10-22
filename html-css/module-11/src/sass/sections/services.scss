@@ -1,0 +1,67 @@
+/* SERVICES */
+
+.services__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 64px;
+
+  &_item {
+    width: 33.3333%;
+    padding-left: 80px;
+    position: relative;
+    margin-bottom: 100px;
+  }
+
+  &_name {
+    font-family: $main-font;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: $main-font-color;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  &_about {
+    font-family: $text-font;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: $font-color;
+  }
+}
+
+.services__list_item::before {
+  content: '';
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 6%;
+  top: 0;
+}
+
+.alarm::before {
+  background-image: url(../images/svg_icons/icon-alarm.svg);
+}
+
+.graph::before {
+  background-image: url(../images/svg_icons/icon-graph.svg);
+}
+
+.computer::before {
+  background-image: url(../images/svg_icons/icon-computer.svg);
+}
+
+.book::before {
+  background-image: url(../images/svg_icons/icon-book.svg);
+}
+
+.home::before {
+  background-image: url(../images/svg_icons/icon-home.svg);
+}
+
+.image::before {
+  background-image: url(../images/svg_icons/icon-image.svg);
+}

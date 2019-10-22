@@ -1,0 +1,125 @@
+/* TEAM */
+
+.about__team {
+  font-family: $text-font;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $font-color;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 90px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  @extend %flex-space;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  margin-bottom: 82px;
+
+  &_profile-img {
+    margin-bottom: 30px;
+  }
+  &_name {
+    font-family: $main-font;
+    font-size: 14px;
+    color: $main-font-color;
+    text-transform: uppercase;
+    @extend %text;
+    margin-bottom: 10px;
+  }
+  &_position {
+    font-family: $text-font;
+    font-size: 15px;
+    color: $font-color;
+    font-weight: 300;
+    font-style: italic;
+    @extend %text;
+  }
+}
+
+/* overlay box*/
+
+.team__list_profile-img {
+  position: relative;
+}
+
+.share__box {
+  position: absolute;
+  top: 0;
+  border: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  background-image: -o-linear-gradient(
+    80deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  background-image: linear-gradient(
+    10deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  );
+  -webkit-box-shadow: 10px 10px $third-color;
+  box-shadow: 10px 10px $third-color;
+  -webkit-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.share__box:hover {
+  opacity: 1;
+}
+
+.team__list_profile:hover {
+  -webkit-transform: translate(-10px, -10px);
+  -ms-transform: translate(-10px, -10px);
+  transform: translate(-10px, -10px);
+  -webkit-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+
+.share__box {
+  @extend %flex-center;
+
+  &_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transform: translateX(78px);
+    -ms-transform: translateX(78px);
+    transform: translateX(78px);
+  }
+  &_list-icon {
+    background-color: $second-color;
+  }
+}
+
+.icon-svg {
+  fill: $first-color;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.icon-svg:hover {
+  fill: $main-color;
+}
+
+.icon-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-right: 1px solid rgba(243, 129, 129, 0.502);
+  width: 56px;
+  height: 56px;
+}
+
+.icon-link:hover {
+  background-color: $first-color;
+}

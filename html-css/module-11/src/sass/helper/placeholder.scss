@@ -1,0 +1,25 @@
+%flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+%flex-space {
+  display: flex;
+  justify-content: space-between;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+
+%text {
+  line-height: 1.2;
+  text-align: center;
+}
+
+%BG {
+  background-size: cover;
+  background-position: bottom;
+}

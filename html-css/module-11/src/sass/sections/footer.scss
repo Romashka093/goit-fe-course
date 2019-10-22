@@ -1,0 +1,70 @@
+/* FOOTER */
+
+.footer {
+  @extend %flex;
+  height: 62px;
+  border-top: 1px solid $border-color;
+
+  &__made_by {
+    font-family: $main-font;
+    font-size: 14px;
+    color: $main-font-color;
+  }
+
+  &__made_by a {
+    display: inline;
+    color: $first-color;
+  }
+
+  &__for_email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  &__send {
+    font-family: $main-font;
+    font-size: 14px;
+    color: $main-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: $third-color;
+    border: none;
+    width: 150px;
+    cursor: pointer;
+  }
+}
+
+.email {
+  font-family: $text-font;
+  font-size: 15px;
+  font-style: italic;
+  width: 230px;
+  height: 40px;
+  padding-left: 12px;
+  border-top: 1px solid $border-color;
+  border-left: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  border-right: none;
+  background-color: $main-color;
+}
+
+.email::-webkit-input-placeholder {
+  color: $placeholder-color;
+}
+
+.email::-moz-placeholder {
+  color: $placeholder-color;
+}
+
+.email:-ms-input-placeholder {
+  color: $placeholder-color;
+}
+
+.email::-ms-input-placeholder {
+  color: $placeholder-color;
+}
+
+.email::placeholder {
+  color: $placeholder-color;
+}
