@@ -1,69 +1,69 @@
 /* SERVICES */
 
 .services {
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 64px;
 
- &__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-top: 64px;
+    &-item {
+      width: 33.3333%;
+      padding-left: 80px;
+      position: relative;
+      margin-bottom: 100px;
 
-  &-item {
-    width: 33.3333%;
-    padding-left: 80px;
-    position: relative;
-    margin-bottom: 100px;
+      &::before {
+        content: '';
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 6%;
+        top: 0;
+      }
+    }
 
-    &::before {
-      content: '';
-      width: 32px;
-      height: 32px;
-      position: absolute;
-      left: 6%;
-      top: 0;
+    &-name {
+      font-family: $main-font;
+      text-transform: uppercase;
+      font-size: 14px;
+      color: $main-font-color;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    &-about {
+      font-family: $text-font;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: $font-color;
     }
   }
 
-  &-name {
-    font-family: $main-font;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: $main-font-color;
-    font-weight: 400;
-    margin-bottom: 20px;
+  .alarm::before {
+    background-image: url(../images/svg_icons/icon-alarm.svg);
   }
 
-  &-about {
-    font-family: $text-font;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: $font-color;
+  .graph::before {
+    background-image: url(../images/svg_icons/icon-graph.svg);
   }
-}
 
-.alarm::before {
-  background-image: url(../images/svg_icons/icon-alarm.svg);
-}
+  .computer::before {
+    background-image: url(../images/svg_icons/icon-computer.svg);
+  }
 
-.graph::before {
-  background-image: url(../images/svg_icons/icon-graph.svg);
-}
+  .book::before {
+    background-image: url(../images/svg_icons/icon-book.svg);
+  }
 
-.computer::before {
-  background-image: url(../images/svg_icons/icon-computer.svg);
-}
+  .home::before {
+    background-image: url(../images/svg_icons/icon-home.svg);
+  }
 
-.book::before {
-  background-image: url(../images/svg_icons/icon-book.svg);
-}
-
-.home::before {
-  background-image: url(../images/svg_icons/icon-home.svg);
-}
-
-.image::before {
-  background-image: url(../images/svg_icons/icon-image.svg);
+  .image::before {
+    background-image: url(../images/svg_icons/icon-image.svg);
+  }
 }
