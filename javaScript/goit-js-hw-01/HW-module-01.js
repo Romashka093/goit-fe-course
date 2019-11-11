@@ -1,14 +1,14 @@
 "use strict";
 
 // ------------TASK-01 - тернарный?
-const name = "Генератор защитного поля";
-let price = 1000;
-let message = `Выбран ${name}, цена за штуку ${price} кредитов`;
-console.log(message);
+// const name = "Генератор защитного поля";
+// let price = 1000;
+// let message = `Выбран ${name}, цена за штуку ${price} кредитов`;
+// console.log(message);
 
-price = 2000;
-message = `Выбран ${name}, цена за штуку ${price} кредитов`;
-console.log(message);
+// price = 2000;
+// message = `Выбран ${name}, цена за штуку ${price} кредитов`;
+// console.log(message);
 
 // ------------TASK-02
 // const total = 100;
@@ -100,7 +100,7 @@ console.log(message);
 // let userInput = String(prompt("Выбери страну, для доставки товара:"));
 
 // switch (userInput.toLowerCase()) {
-//   case 'null': 
+//   case 'null':
 //    alert('Вы ничего не выбрали, пожалуйста, попробуйте еще раз');
 //    break;
 
@@ -134,25 +134,24 @@ console.log(message);
 
 // ------------TASK-06
 
-// let input;
-// let total = 0;
+let input;
+let total = 0;
 
-// while (true) {
-//     input = prompt('Введите число');
+while (true) {
+  input = prompt("Введите число");
 
-//   if (input === null) {
-//     break;
-//   }
+  if (input === null) {
+    break;
+  }
 
-//   input = Number(input);
+  input = Number(input);
 
-//   if (input <= 0) {
-//     alert(`Общая сумма чисел равна ${total}`)
-//     break;
-//   }
+  if (input <= 0) {
+    alert(`Общая сумма чисел равна ${total}`);
+    break;
+  }
 
-//   total += input;
-  
-// }
+  total += input;
+}
 
-// console.log(total);
+console.log(total);
