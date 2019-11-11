@@ -83,43 +83,47 @@
 
 // // TASK-05
 // console.log("TASK-05");
+
+// let input = prompt("enter your text");
+
 // const checkForSpam = function(string) {
-//   let str = null;
-//   if (string.includes("spam".toUpperCase())) {
+//   let str = string.toLowerCase();
+//   if (str.includes("spam")) {
 //     return true;
-//   } else if (string.includes("sale")) {
+//   } else if (str.includes("sale")) {
 //     return true;
 //   } else {
 //     return false;
 //   }
 // };
+// console.log(checkForSpam(input));
 
 // // Вызовы функции для проверки работоспособности твоей реализации.
-
-// console.log(checkForSpam("Latest technology news")); // false
-// console.log(checkForSpam("JavaScript weekly newsletter")); // false
-// console.log(checkForSpam("Get best sale offers now!")); // true
-// console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
+// // Latest technology news
+// // JavaScript weekly newsletter
+// // Get best sale offers now!
+// // [SPAM] How to earn fast money?
 
 // // TASK-06
 
-let input;
-const numbers = [];
-let total = 0;
+// let input;
+// const numbers = [];
+// let total = 0;
 
-for (let index = 0; index < 2; index++) {
-  input = prompt("Введите число");
-  if (input === null) {
-    break;
-  } else if (isNaN(input) || !input) {
-    alert("Было введено не число, попробуйте еще раз");
-    break;
-  } else {
-    numbers.push(Number(input));
-  }
-  index = 0;
-}
-for (let index = 0; index < numbers.length; index++) {
-  total += numbers[index];
-}
-alert(`Общая сумма чисел равна ${total}`);
+// for (let index = 0; index < 2; index++) {
+//   input = prompt("Введите число");
+//   if (input === null) {
+//     break;
+//   } else if (isNaN(input) || !input) {
+//     alert("Было введено не число, попробуйте еще раз");
+//     break;
+//   } else {
+//     numbers.push(Number(input));
+//   }
+//   index = 0;
+// }
+// for (let index = 0; index < numbers.length; index++) {
+//   total += numbers[index];
+// }
+// alert(`Общая сумма чисел равна ${total}`);
+
