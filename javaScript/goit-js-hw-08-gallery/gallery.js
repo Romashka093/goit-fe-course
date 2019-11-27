@@ -5,6 +5,7 @@ console.log(galleryItems);
 const gallery = document.querySelector(".js-gallery");
 const lightbox = document.querySelector(".js-lightbox");
 const lightboxImg = document.querySelector(".lightbox__image");
+const lightboxOverlay = document.querySelector(".lightbox__overlay");
 
 let string = "";
 
@@ -42,3 +43,10 @@ gallery.addEventListener("click", event => {
     }
   });
 });
+
+lightboxOverlay.addEventListener("click", handleBackdropClick);
+function handleBackdropClick(event) {
+  if (event.target !== event.currentTarget) {
+    return;
+  }
+}

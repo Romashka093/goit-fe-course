@@ -62,18 +62,15 @@ import users from "./users.js";
 // console.log(getUsersWithFriend(users, "Briana Decker")); // [ 'Sharlene Bush', 'Sheree Anthony' ]
 // console.log(getUsersWithFriend(users, "Goldie Gentry")); // [ 'Elma Head', 'Sheree Anthony' ]
 
-// // task-09
+// task-09
 // const getNamesSortedByFriendsCount = users => {
-//   const sortedUsers = [...users]
-//     .sort((userA, userB) => {
-//       userA.friends - userB.friends;
-//     })
-//     .map(user => user.name);
+//   const sortByFriends = (userA, userB) =>
+//     userA.friends.length - userB.friends.length;
+//   const sortedUsers = users.sort(sortByFriends).map(user => user.name);
 //   return sortedUsers;
 // };
-
 // console.log(getNamesSortedByFriendsCount(users));
-// // [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
+// [ 'Moore Hensley', 'Sharlene Bush', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony', 'Ross Vazquez' ]
 
 // // task-10
 // const getSortedUniqueSkills = users => {
@@ -84,4 +81,4 @@ import users from "./users.js";
 //   return [...new Set(totalSkills)];
 // };
 // console.log(getSortedUniqueSkills(users));
-// // [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit',]
+// [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit',]
