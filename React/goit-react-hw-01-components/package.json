@@ -36,5 +36,6 @@
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "prop-types": "^15.7.2"
-  }
+  },
+  "homepage": "http://"
 }
